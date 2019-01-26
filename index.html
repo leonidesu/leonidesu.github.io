@@ -8,7 +8,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/favicon.png">
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="newDesc()">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -17,7 +17,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Andrew Jung</h1>
-						<p>Smile &nbsp;&bull;&nbsp; Sparkle &nbsp;&bull;&nbsp; Shine</p>
+						<p id="descDisplay"></p>
 						<nav>
 							<ul>
 								<li><a href="https://www.instagram.com/andrewjunggg/" class="icon fa-instagram"><span class="label">Twitter</span></a></li>
@@ -39,6 +39,17 @@
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script>
+		var desc = [
+			'test',
+			'test2'
+		]
+
+		function newDesc() {
+			var randomNumber = Math.floor(Math.random() * (desc.length));
+			document.getElementById('descDisplay').innerHTML = desc[randomNumber];
+		}
 		</script>
 	</body>
 </html>
