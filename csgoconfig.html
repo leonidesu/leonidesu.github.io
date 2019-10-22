@@ -9,7 +9,9 @@
 	<body><pre><code><a href="https://leonidesu.space">Back</a>
 	
 <a href="https://github.com/leonidesu/csgoconfig/releases">Download</a>
-// Leonidesu's CSGO Config v1.2 - dpi 400
+// Leonidesu's CSGO Config v2.0 - dpi 400
+// Startup Commands
+//-novid -freq 144 -nod3d9ex -no-browser -nojoy +exec autoexec.cfg
 
 unbindall
 bind "1" "slot1"
@@ -558,6 +560,32 @@ sys_aspectratio "-1"
 sys_refldetail "0"
 mat_queue_mode 2
 fps_max 0
+
+snd_menumusic_volume "0"   // (disables menu music)
+snd_mix_async "1"   // (allows for shorter lookahead buffer (snd_mixahead), improves performance)
+snd_mixahead "0.025"   // (low audio latency, makes CS audio feel more insync with screen)
+
+cl_lagcompensation "1"   // (activates client-side lag compensation)
+cl_predict "1"   // (activates client-side prediction, predicts physics, movement, firing etc)
+cl_predictweapons "1"   // (activates client-side weapon effects prediction)
+cl_interp "0"   // (interpolation, should always be set to "0")
+cl_interp_ratio "1"   // (interpolation ratio, "1" = low ping, "2" = higher ping)
+cl_cmdrate "128"   // (for -tickrate 128 launch option)
+cl_updaterate "128"   // (for -tickrate 128 launch option)
+rate "786432"   // (max bandwidth rate)
+
+cl_autohelp "0"   // (disables ingame tips, can improve FPS)
+cl_disablehtmlmotd "0"   // (for use with -no-browser in launch options)
+cl_downloadfilter "nosounds"   // (stops servers from downloading annoying custom sounds)
+cl_showhelp "0"   // (disables ingame tips, similar to cl_autohelp)
+
+cl_forcepreload "0"   // (I'd use to advice to use value of "1" but it has been stated by Valve to use "0" instead for reducing stutters)   
+
+r_dynamic "0"   // (disables dynamic lightning effects which can be a disadvantage, improves FPS slightly on lower spec PCs but I recommend using "1" instead)
+
+m_rawinput "1"   // (enables raw hardware input for mouse, disables all software filtering, acceleration, post-processing etc)
+m_mousespeed "0" // (disables Windows mouse acceleration)
+joystick "0"   // (disables joystick support, mandatory for playing on faceit servers)
 
 // Crosshair
 cl_crosshair_drawoutline "1"
