@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Leonidesu's CSGO Config</title>
-      <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	   <link rel="icon" href="images/favicon.png">
-   </head>
-	<body><a href="https://andrewjung.me">Back</a><button onclick="myFunction()">Copy</button><pre><code id="myInput">
+<head>
+	<title>Leonidesu's CSGO Config</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.top {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.content {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="top">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="content">
+    <a href="https://andrewjung.me">Back</a><button onclick="myFunction()">Copy</button><pre><code id="myInput">
 // Leonidesu's CSGO Config v3.0
 //
 // DPI: 400
@@ -616,16 +658,8 @@ cl_fixedcrosshairgap "3"
 // Write config
 host_writeconfig</code>
   </pre>
-   </body>
-	
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
-	
-</html>
+  </div>
+</div>
+
+</body>
+</html> 
