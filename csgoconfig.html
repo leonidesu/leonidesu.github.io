@@ -48,11 +48,11 @@ body {
     <span class="dot"></span>
   </div>
 
-  <div class="content"><pre><code id="myInput">// Leonidesu's CSGO Config v7.1
+  <div class="content"><pre><code id="myInput">// Leonidesu's CSGO Config v8.0
 //
 // DPI: 750
 // Startup Command: -
-// Resolution: 2560x1440 (16:9)
+// Resolution: 1920x1440 (4:3)
 
 unbindall
 bind "1" "slot1"
@@ -466,7 +466,7 @@ scene_showfaceto "0"
 scene_showlook "0"
 scene_showmoveto "0"
 scene_showunlock "0"
-sensitivity "0.5"
+sensitivity "0.35"
 sk_autoaim_mode "1"
 skill "1.000000"
 snd_deathcamera_volume "0"
@@ -589,7 +589,7 @@ xbox_autothrottle "1"
 xbox_throttlebias "100"
 xbox_throttlespoof "200"
 zoom_sensitivity_ratio_joystick "0.7"
-zoom_sensitivity_ratio_mouse "1.5"
+zoom_sensitivity_ratio_mouse "1.1"
 cmd1 +jlook
 
 
@@ -687,31 +687,29 @@ m_rawinput "1"   // (enables raw hardware input for mouse, disables all software
 m_mousespeed "0" // (disables Windows mouse acceleration)
 joystick "0"   // (disables joystick support, mandatory for playing on faceit servers)
 
-// Crosshair
-//cl_crosshair_drawoutline "0"
-//cl_crosshair_dynamic_maxdist_splitratio "0.35"
-//cl_crosshair_dynamic_splitalpha_innermod "1"
-//cl_crosshair_dynamic_splitalpha_outermod "0.5"
-//cl_crosshair_dynamic_splitdist "7"
-//cl_crosshair_friendly_warning "1"
-//cl_crosshair_outlinethickness "1"
-//cl_crosshair_sniper_show_normal_inaccuracy "0"
-//cl_crosshair_sniper_width "2"
-//cl_crosshair_t "0"
-//cl_crosshairalpha "200"
-//cl_crosshaircolor "5"
-//cl_crosshaircolor_b "0"
-//cl_crosshaircolor_g "255"
-//cl_crosshaircolor_r "0"
-//cl_crosshairdot "0"
-//cl_crosshairgap "-2"
-//cl_crosshairgap_useweaponvalue "0"
-//cl_crosshairscale "0"
-//cl_crosshairsize "3"
-//cl_crosshairstyle "4"
-//cl_crosshairthickness "1"
-//cl_crosshairusealpha "1"
-//cl_fixedcrosshairgap "3"
+cl_crosshair_drawoutline "1"
+cl_crosshair_dynamic_maxdist_splitratio "0.300000"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.5"
+cl_crosshair_dynamic_splitdist "7"
+cl_crosshair_friendly_warning "1"
+cl_crosshair_outlinethickness "1"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "2"
+cl_crosshair_t "0"
+cl_crosshairalpha "200"
+cl_crosshaircolor "5"
+cl_crosshaircolor_b "255"
+cl_crosshaircolor_g "255"
+cl_crosshaircolor_r "0"
+cl_crosshairdot "0"
+cl_crosshairgap "-1.500000"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairsize "1.600000"
+cl_crosshairstyle "4"
+cl_crosshairthickness "1.000000"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "3"
 
 // Write config
 host_writeconfig</code>
